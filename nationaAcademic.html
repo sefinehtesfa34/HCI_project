@@ -1,0 +1,1574 @@
+<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<title>National Academic Digital Library of Ethiopia</title>
+<meta name="robots" content="NOODP">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/nadle-final.ico" type="image/x-icon" />
+<link rel="stylesheet" href="front_page_files/googleapis.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/bootstrap-material-design.min.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/ripples.min.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/bootstrap-select.min.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/owl.theme.default.min.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/common.css" type="text/css">
+<link rel="stylesheet" href="front_page_files/landing.css" type="text/css">
+<script src="front_page_files/jquery-1.11.3.min.js"></script>
+<script src="front_page_files/jquery-ui.min.js"></script>
+<script src="front_page_files/material.min.js"></script>
+<script src="front_page_files/ripples.min.js"></script>
+<script src="front_page_files/bootstrap.min.js"></script>
+<script src="front_page_files/bootstrap-select.min.js"></script>
+<script src="front_page_files/owl.carousel.min.js"></script>
+<script src="front_page_files/bootstrap-typeahead.min.js"></script>
+<script src="front_page_files/md5.js"></script>
+<script src="front_page_files/common.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+  .main-tab:hover {
+    background: #1F3F5E;
+  }
+
+  .navbar-fixed-top {
+    min-height: 40px;
+    height: 40px;
+  }
+
+  .ndl-nav-bar {
+    margin-left: 225px;
+  }
+
+  .logo-img-lg {
+    margin-top: 5px;
+    max-height: 90%;
+    width: 100%;
+  }
+
+  .logo-img-sm {
+    margin-top: 5px;
+    max-height: 90%;
+  }
+
+  .navbar-fixed-bottom {
+    min-height: 30px;
+    height: 30px;
+    background-color: #034B64;
+  }
+
+  .nav-highlight,
+  #nav-covid {
+    background: #BB1231 !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+  }
+
+  .nav-highlight:hover,
+  #nav-covid:hover {
+    background: #1F3F5E !important;
+    color: #fff !important;
+  }
+
+  .navbar-brand {
+    padding: 2px 15px !important;
+    height: 40px !important;
+  }
+
+  .navbar-brand img {
+    height: 36px;
+  }
+
+  .navbar-fixed-top .navbar-right .dropdown-menu {
+    overflow-y: scroll !important;
+    max-height: 250px !important;
+  }
+
+  .navbar-fixed-top .main-tab a {
+    padding: 10px 15px !important;
+  }
+
+  .navbar-fixed-top .dropdown-menu a {
+    padding: 5px 15px !important;
+  }
+
+  .navbar-fixed-bottom .main-tab a,
+  .navbar-fixed-bottom .dropdown-menu a {
+    padding: 5px 15px !important;
+  }
+
+  .navbar-toggle {
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+
+  .navbar-collapse.collapse.in,
+  .navbar-collapse.collapsing {
+    background: #333;
+  }
+
+  /* .main-tab>a:focus */
+  .main-tab>a:hover {
+    background-color: #1F3F5E !important;
+  }
+
+  .main-tab.active {
+    background-color: #1F3F5E;
+  }
+
+  .main-tab a {
+    font-weight: 400;
+  }
+
+  #footer-xs {
+    margin-top: 5px;
+  }
+
+  #footer-xs a,
+  #footer-xs a {
+    padding: 0px 6px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #footer-xs a:hover {
+    color: #1F3F5E;
+  }
+
+ 
+
+  @keyframes blinkingText {
+    0% {
+      color: #000;
+    }
+
+    49% {
+      color: #000;
+    }
+
+    60% {
+      color: transparent;
+    }
+
+    99% {
+      color: transparent;
+    }
+
+    100% {
+      color: #000;
+    }
+  }
+
+  .blink {
+    animation: blinkingText 1.2s infinite;
+  }
+
+  @keyframes blinkingText {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  #search-key,
+  #email,
+  #password {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1F3F5E), to(#1F3F5E)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#1F3F5E, #1F3F5E), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#1F3F5E, #1F3F5E), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#1F3F5E, #1F3F5E), linear-gradient(#D2D2D2, #D2D2D2);
+  }
+</style>
+
+<script type="text/javascript">$(document).bind("contextmenu", function (e) { return false; });</script>
+<script type="application/ld+json">
+     {
+         "@context": "https://schema.org",
+         "@type": "Organization",
+         "name": "National Academic Digital Library of Ethiopia",
+         "url": "https://ndl.ethernet.edu.et",
+         "logo": ".front_page_files/logo.png",
+         "sponsor": "",
+         "foundingDate": "",
+         "address": {
+         "@type": "PostalAddress",
+         "addressLocality": "Ethiopia",
+         "addressRegion": "",
+         "postalCode": "",
+         "addressCountry": ""
+     },
+     "contactPoint": {
+     "@type": "ContactPoint",
+     "contactType": "customer support",
+     "telephone": "+91-3222-282435",
+     "email": ""
+ },
+ "sameAs": [
+ "https://www.facebook.com/",
+ "https://twitter.com/",
+ "https://www.youtube.com/c/",
+ "https://in.linkedin.com/company/",
+ "https://play.google.com/store/apps/",
+ "https://apps.apple.com/in/app/",
+ "https://en.wikipedia.org/wiki/"
+ ]
+ }
+ </script>
+<script type="text/javascript">var s = false;
+  $(window).focus(function () {
+    if (lang_value() != "en")
+      location.reload();
+    var name = "_PEARL=";
+    var ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == " ")
+        c = c.substring(1);
+      if (c.indexOf(name) == 0 && !window.s) {
+        location.reload();
+        return;
+      }
+      if (c.indexOf(name) == 0)
+        break;
+    }
+    if (ca.length == i && window.s)
+      location.reload();
+  });
+  function lang_value() {
+    var name = "lang=";
+    var ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "en";
+  }</script>
+<style type="text/css">
+</style>
+
+<div class="container-fluid" style="height: 100%; padding: 0px;">
+  <nav class="navbar navbar-fixed-top ndl-dark-green-theme">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-header">
+          <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-header">
+        <ul class="nav navbar-nav">
+          <li class="dropdown main-tab"><a href="javascript:void(0)" data-target="#" id="nav-browse"
+              class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-bars"></i> <span
+                class="">Browse</span> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/community-list" id="nav-browse-type"><i class="fa fa-lg fa-file-text-o"></i> Subject and
+                  Collections</a></li>
+              <li><a href="/browse?type=dateissued" id="nav-browse-type"><i class="fa fa-lg fa-th-list"></i> By Issue
+                  Date</a></li>
+              <li><a href="/browse?type=author" id="nav-browse-type"><i class="fa fa-lg fa-th-list"></i> By Author</a>
+              </li>
+              <li><a href="/browse?type=title" id="nav-browse-subject"><i class="fa fa-lg fa-th-list"></i> By Title</a>
+              </li>
+              <li><a href="/browse?type=subject" id="nav-browse-source"><i class="fa fa-th-list"></i> By Subject</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-tab"><a class="nav-menu-header" href="javascript:void(0)" id="nav-search"><i
+                class="fa fa-lg fa-search"></i> <span class="">Search</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="main-tab"><a class="nav-menu-header blink" href="javascript:void(0)" id="nav-covid"><i
+                class="fa fa-lg fa-bug"></i> <span class="">Corona Outbreak: Study from home</span></a></li>
+          <li class="main-tab"><a class="nav-menu-header" href="javascript:void(0)" id="nav-login"><i
+                class="fa fa-lg fa-sign-in"></i> <span class="">Log-In</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="page-content">
+    <header class="container-fluid bg_white">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="logo-lg">
+            <a href="/"><img src="front_page_files/logo.png" class="img-responsive"
+                alt="National Digital Library of Ethiopia" style="margin-top: 5%;"></a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="text-center" style="padding: 10px 0px;">
+
+
+
+
+
+
+            80696 items are hosted in National Academic Digital Library of Ethiopia
+
+          </div>
+          <div class="well" id="search-box" style="display: block;margin-left: 3%">
+            <div class="row">
+              <div class="col-xs-9" style="padding-right: 0px;">
+                <div class="form-group is-empty">
+                  <form method="get" action="/simple-search">
+                    <input type="text" name="query" class="form-control" id="search-key" maxlength="100"
+                      autofocus="autofocus" autocomplete="off" spellcheck="false"
+                      placeholder=" Enter your search key...">
+
+                </div>
+                <ul class="typeahead dropdown-menu"></ul>
+              </div>
+
+              <div class="col-xs-3" style="padding-left: 0px;">
+                <button class="btn btn-raised btn-primary btn-block" type="submit" id="search-btn"
+                  style="background-color: #1F3F5E;">
+                  <i class="fa fa-lg fa-search" aria-hidden="true"></i>
+                </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-3 hidden-xs" style="padding: 5px 0px;">
+          <div class="rows">
+
+            <div class="col-sm-6 logo-lg" style="margin-left: 25%;">
+              <img src="front_page_files//sponsor-m.png" alt="" class="img-responsive" style="height: 620px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </header>
+
+    <section class="bodycontent" style="height: 918px; margin-top: 2%;background-color: white">
+      <div class="row">
+        <div class="col-sm-9 hidden-xs">
+          <div class="row">
+            <div class="col-sm-4">
+              <ul id="nav-control">
+                <li class="list-group-item active" id="nav-left-about">
+                  <div class="nav-icon hidden-sm">
+                    <img src="front_page_files/about.png" class="img-responsive" alt="">
+                  </div>
+                  <h4>About NADLE</h4>
+                </li>
+
+                <li class="list-group-item" id="nav-left-ddc" >
+                  <div class="nav-icon hidden-sm">
+                    <img src="front_page_files/subject.png" class="img-responsive" alt="">
+                  </div>
+                  <h4>Subject Domains</h4>
+                </li>
+                <li class="list-group-item" id="nav-left-source" >
+                  <div class="nav-icon hidden-sm">
+                    <img src="front_page_files/videoLecture.png" class="img-responsive" alt="">
+                  </div>
+                  <h4>Available Online Courses</h4>
+                </li>
+                <li class="list-group-item " id="nav-left-news">
+                  <div class="nav-icon hidden-sm">
+                    <img src="front_page_files/source.png" class="img-responsive" alt="">
+                  </div>
+                  <h4>Related Digital Archives</h4>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-8" id="carousel-content">
+              <div class="owl-carousel-container" id="owl-carousel-about" style="display: none;">
+                <div class="owl-carousel owl-theme">
+                  <div class="owl-item cloned" style="width: 800px;">
+                    <div class="item">
+                      <img src="front_page_files/slider13.png" class="img-responsive" alt="">
+                      <h4>More than 70,000 <span> academic learning resources are available</span></h4>
+                    </div>
+                  </div>
+
+
+
+                  <div class="owl-item" style="width: 800px;">
+                    <div class="item">
+                      <img src="front_page_files/slider11.png" class="img-responsive" alt="">
+                      <h4>Educational materials are available for all university students</h4>
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 800px;">
+                    <div class="item">
+                      <img src="front_page_files/slider12.png" class="img-responsive" alt="">
+                      <h4><span>70,000</span> items have been authored by <span> more than 30,000 authors</span></h4>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="owl-carousel-container" id="owl-carousel-ddc" style="display: none;">
+                <div class="owl-carousel owl-theme">
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="flip-container">
+                        <a href="http://ndl.ethernet.edu.et/handle/123456789/79572">
+                          <div class="flipper">
+                            <div class="front">
+                              <div><img src="front_page_files/book.svg" alt=""></div>
+                              <h4>E-Books</h4>
+                            </div>
+                            <div class="back"><strong>Covers reference materials from</strong><br> Business and
+                              Economics, Health Science, Social Science, Development Studies, University Freshman
+                              Modules, Veterinary Medicine, General Reference, HUMANITY, Language Studies &amp;
+                              Journalism, Law and Governance Studies, Technology and Others</div>
+                          </div>
+                        </a>
+                      </div>
+                      <br>
+                      <div class="flip-container">
+                        <a href="http://ndl.ethernet.edu.et/handle/123456789/78232">
+                          <div class="flipper">
+                            <div class="front">
+                              <div><img src="front_page_files/lrt.svg" alt=""></div>
+                              <h4>University Course Materials</h4>
+                            </div>
+                            <div class="back"><strong>Covers materials for Postgraduate and Undergraduate Students
+                                from</strong><br> Business and Economics, Development Studies, Natural Sciences,
+                              Technology, Law and Governance Studies, Performing and Visual Arts &amp; Agriculture and
+                              Environmental Science and Other Domains</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="flip-container">
+                        <a href="http://ndl.ethernet.edu.et/handle/123456789/78230">
+                          <div class="flipper">
+                            <div class="front">
+                              <div><img src="front_page_files/technicalManual.svg" alt=""></div>
+                              <h4>TVET</h4>
+                            </div>
+                            <div class="back"><strong>Covers materials from</strong><br> Electrical &amp; Electronic
+                              Technology, Automotive Technology, Basic Sciences &amp; Vocational Pedagogy, Beekeeping
+                              LI, Artificial Insemination, Construction Technology, Surveying Technology &amp; Furniture
+                              Making Technology and others</div>
+                          </div>
+                        </a>
+                      </div>
+                      <br>
+                      <div class="flip-container">
+                        <a href="http://ndl.ethernet.edu.et/handle/123456789/78227">
+                          <div class="flipper">
+                            <div class="front">
+                              <div><img src="front_page_files/webCourse.svg" alt=""></div>
+                              <h4>Training Resourses</h4>
+                            </div>
+                            <div class="back"><strong>Covers materials from</strong><br> Teams &amp; Office365,
+                              Educational Platforms, Research Platrorms and Other Related Domains</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 
+   <div class="slide" style="background-color: red;"> Your Content 1 </div>
+   <div class="slide" style="background-color: red;"> Your Content 2</div>
+   <div class="slide" style="background-color: red;">  Your Content 3</div>
+   <div class="slide" style="background-color: red;"> Your Content 4</div>
+   <div class="slide" style="background-color: red;"> Your Content 5</div>
+   <div class="slide" style="background-color: red;"> Your Content 6</div>
+   <div class="slide" style="background-color: red;"> Your Content 7</div>
+ 
+   <div class="slide" style="background-color: red;"> Your Content 8</div>
+ 
+   <div class="owl-item cloned" style="width: 390px; margin-right: 20px;"><div class="item"><div class="flip-container">
+     <a href="https://ndl.iitkgp.ac.in/result?q={%22t%22:%22DDC%22,%22b%22:{%22browse%22:%22DDC%22,%22filters%22:[%22DDC=\%22600%3A%3ATechnology\%22%22]}}">
+       <div class="flipper">
+         <div class="front"><div><img src="front_page_files/600.svg" alt=""></div><h4>Technology</h4></div>
+         <div class="back"><strong>Covers materials from</strong><br> Medicine &amp; health, Human physiology, Personal health &amp; safety, Pharmacology and therapeutics, Surgery &amp; related medical specialties, Agriculture Technology, Chemical engineering, Civil &amp; Mechanical Engineering and others</div>
+       </div>
+     </a>
+   </div>
+   <br><div class="flip-container">
+     <a href="https://ndl.iitkgp.ac.in/result?q={%22t%22:%22DDC%22,%22b%22:{%22browse%22:%22DDC%22,%22filters%22:[%22DDC=\%22700%3A%3AThe+arts%3B+fine+%26+decorative+arts\%22%22]}}">
+       <div class="flipper">
+         <div class="front"><div><img src="front_page_files/700.svg" alt=""></div><h4>The arts; fine &amp; decorative arts</h4></div>
+         <div class="back"><strong>Covers materials from</strong><br> Civic &amp; landscape art, Architecture, Sculpture, Graphic arts &amp; decorative arts, Painting &amp; paintings, Photography, Music, Recreational &amp; performing arts and other domains</div>
+       </div>
+     </a>
+   </div></div></div> -->
+                </div>
+              </div>
+
+              <div class="owl-carousel-container" id="owl-carousel-source" style="display: none;">
+                <div class="owl-carousel owl-theme">
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ndl.ethernet.edu.et/mit.jsp">
+                          <img src="https://ocw.mit.edu/images/logo_mit.png" width=300px height=100px
+                            class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">MIT OpenCourseWare</div>
+                            <div class="slide-desc">Hosts 2 lakh thesis and synopsis reports authored by Indian
+                              Researchers from different institutes</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ndl.ethernet.edu.et/edx.jsp">
+                          <img src="https://www.edx.org/sites/default/files/theme/edx-logo-header.png"
+                            class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">EdX</div>
+                            <div class="slide-desc">MHRD sponsored project that hosts 1 lakh video lectures in
+                              engineering domain</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item active" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ndl.ethernet.edu.et/microsoft.jsp">
+                          <img
+                            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2qVsJ?ver=3f74"
+                            class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">Microsoft</div>
+                            <div class="slide-desc">MHRD sponsored project that hosts 1 lakh video lectures in
+                              engineering domain</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item active" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ndl.ethernet.edu.et/huawai.jsp">
+                          <img src="https://www-file.huawei.com/-/media/corporate/images/home/logo/huawei_logo.png"
+                            class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">HUAWEI</div>
+                            <div class="slide-desc">MHRD sponsored project that hosts 1 lakh video lectures in
+                              engineering domain</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="owl-carousel-container" id="owl-carousel-news" style="display: none;">
+                <div class="owl-carousel owl-theme">
+
+                  <div class="owl-item active" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="https://nadre.ethernet.edu.et/">
+                          <img src="https://nadre.ethernet.edu.et/static/img/nadrelogo.jpg" class="img-responsive"
+                            alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">NADRE</div>
+                            <div class="slide-desc">National Academic Digital Repository of Ethiopia provides access to
+                              all research outputs from across all domains of Ethiopia</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item active" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ejol.ethernet.edu.et/">
+                          <img src="http://ejol.ethernet.edu.et/uploads/EJOL-long.png" class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">Ethiopian Journals Online</div>
+                            <div class="slide-desc">The EJOL platform is freely available to all open access journals
+                              which are locally published in Ethiopia</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item active" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://psi.gov.et/index.php/publications">
+                          <img src="http://psi.gov.et/images/logo-psi-400x100-1.png" class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">Policy Studies Institute (PSI)</div>
+                            <div class="slide-desc">To access publications, research reports, issues etc. of Policy
+                              Studies Institute (PSI).</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="https://books.google.com/">
+                          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                            class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">Google Books</div>
+                            <div class="slide-desc">More than 100,000 books for consultation, download or on-line
+                              purchase.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item active" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="https://archive.org">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Internet_Archive_logo_and_wordmark.svg/1200px-Internet_Archive_logo_and_wordmark.svg.png"
+                            class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">Internet Archive</div>
+                            <div class="slide-desc">The largest digital archive for downloading e-books and audio-books
+                              for free.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="https://www.hindawi.com/">
+                          <img
+                            src="https://static-01.hindawi.com/next_assets/9Fkv2JDKmVfcYRbz7kzS6/_next/static/node_modules/hindawi-ui/src/icon/svg/logo.svg"
+                            width=300px height=100px class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">Hindawi</div>
+                            <div class="slide-desc">Hindawi Publishing Corporation is one of the world's largest
+                              publishers of peer-reviewed, fully Open Access journals etc.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="https://www.doaj.org/">
+                          <img src="https://www.doaj.org/static/doaj/images/logo_cropped.jpg" width=300px height=100px
+                            class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">DOAJ (Directory of Open Access Journals)</div>
+                            <div class="slide-desc">DOAJ is a community-curated online directory that indexes and
+                              provides access to high quality, open access, peer-reviewed journals. </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="https://www.elgaronline.com/">
+                          <img
+                            src="data:image/png;base64,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"
+                            width=300px height=100px class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">ElgarOnline</div>
+                            <div class="slide-desc">Edward Elgar Publishing online books and journals.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ulib.isri.cmu.edu/">
+                          <img src="http://ulib.isri.cmu.edu/ULIBImages/ULIBsmall.gif" width=300px height=100px
+                            class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">The Universal Digital Library</div>
+                            <div class="slide-desc">A collection of one million books</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ulib.isri.cmu.edu/">
+                          <img src="https://avatars3.githubusercontent.com/u/28043403?s=280&v=4" width=300px
+                            height=100px class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">Global Digital Library</div>
+                            <div class="slide-desc">A collection of a million books</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ulib.isri.cmu.edu/">
+                          <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/African_Storybook_logo_blue.png"
+                            width=300px height=100px class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">African Storybook</div>
+                            <div class="slide-desc">Open access to picture storybooks in the languages of Africa.For
+                              children's literacy, enjoyment and imagination.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 390px; margin-right: 20px;">
+                    <div class="item">
+                      <div class="slide-large">
+                        <a href="http://ulib.isri.cmu.edu/">
+                          <img src="https://comms.worldreader.org/wp-content/themes/worldreader/assets/images/logo.png"
+                            width=300px height=100px class="img-responsive" alt="">
+                          <div class="slide-text">
+                            <div class="slide-title">Worldreader</div>
+                            <div class="slide-desc">People who read achieve better educational success, improve their
+                              earning potential, and lead healthier, happier lives. </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <style>
+          input[type="email"]::placeholder {
+
+            /* Firefox, Chrome, Opera */
+            margin-left: 12%;
+            padding-left: 10%;
+          }
+
+          input[type="password"]::placeholder {
+
+            /* Firefox, Chrome, Opera */
+            padding-left: 10%;
+          }
+        </style>
+
+        <div class="col-sm-3" id="right-pane">
+          <div class="login-box">
+            <h3>
+              <i class="fa fa-user"></i> Log-In
+            </h3>
+            <div class="login-box-body">
+              <form autocomplete="off" name="loginform" class="form-horizontal" id="loginform" method="post"
+                action="/password-login" id="login-form">
+                <div class="form-group is-empty">
+                  <input name="login_email" type="email" required="required" class="form-control textbox-icon"
+                    id="email" placeholder="E-mail address" style="padding-left: 10%;">
+                </div>
+                <div class="form-group is-empty" style="margin-bottom: 5%">
+                  <input name="login_password" type="password" required="required" class="form-control textbox-icon"
+                    id="password" placeholder="Enter your password" style="padding-left: 10%;">
+                </div>
+                <!-- <div class="form-group text-center is-empty">
+ <div>
+ <img src="front_page_files/simple-php-captcha.php" id="captcha" alt="Captcha"> <a id="recaptcha-btn" class="btn btn-lg btn-primary btn-raised" title="Reload" href="javascript:void(0)" onclick="recaptcha()"> <i class="fa fa-refresh"></i>
+ </a>
+ </div>
+ <input type="text" class="form-control" id="captcha-text" required="required" name="captcha" placeholder="Enter the displayed text">
+ </div> -->
+                <div class="row">
+                  <!-- <div class="col-xs-6 checkbox">
+ <label class="text-small"><input name="rem-me" type="checkbox"><span class="checkbox-material">
+ <span class="check"></span></span> Remember me</label>
+ </div> -->
+                  <div class="col-xs-10 col-xs-offset-1">
+                    <!-- <button type="submit" class="btn btn-raised btn-success btn-block">
+ <i class="fa fa-sign-in"></i> <span class="hidden-sm">Log-In</span>
+ 
+ </button> -->
+                    <!-- <input type="submit" class="btn btn-raised btn-block btn-primary" name="login_submit" value="Log In"/> -->
+                    <button name="login_submit" type="submit" class="btn btn-raised btn-block btn-primary"
+                      style="background-color: #1F3F5E;"><i class="fa fa-sign-in"></i> <strong class="hidden-sm">Log
+                        in</strong></button>
+                    <!-- <a href="https://ndl.iitkgp.ac.in/account/registration" class="btn btn-raised btn-block btn-primary" style="background-color: #1F3F5E;"><i class="fa fa-sign-in"></i> <strong class="hidden-sm">Log in</strong></a> -->
+
+                    <hr>
+                    <br>
+                  </div>
+                </div>
+
+              </form>
+
+              <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+
+                  <a href="/forgot" title="Account recovery" class="btn btn-block btn-warning btn-warning-border"><i
+                      class="fa fa-user-md"></i> <strong class="hidden-sm">Account recovery</strong></a>
+                  <a href="/register" class="btn btn-raised btn-block btn-primary" style="background-color: #1F3F5E;"><i
+                      class="fa fa-user-plus"></i> <strong class="hidden-sm">Register</strong></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="navbar navbar-inverse navbar-bottom" style="background:#034B64; margin-bottom:2%;margin-top: 4%">
+
+        <div id="designedby" class=" text-muted">
+          <div class="col-md-4" style="margin-top: 2%;margin-bottom: 2%; color:white;text-align: left;">
+
+            <!-- <h4><b>  ABOUT MOSHE</b></h4><hr>
+                   <p style="text-align: left;">Ministry of Science and Higher Education (MoSHE),established by proclamation number 1097/2018 in October 2018, is responsible to lead the development of science, higher education as well as the technical and vocational education and training (TVET) in Ethiopia.<a href="http://moshe.gov.et" style="color: white;"> SHOW MORE</a>   </p>
+                     -->
+            <a href="javascript:void(0)" id="nav-about" style="color: white"><b>About Us</b> </a> |
+            <!-- </div>
+                   
+                   <div class="col-md-4" style="margin-top: 3%;color:white;text-align: left;"> -->
+            <a href="javascript:void(0)" id="nav-contact" style="color: white"><b>Contact Us</b> </a>
+            <!-- <h4><b>RELATED SERVICES</b></h4> <hr>
+                   <p style="text-align: left;">
+                       <a href="https://nadre.ethernet.edu.et" style="color:white">National Academic Digital Repository of Ethiopia</a> <br><br>
+                       <a href="http://courses.ethernet.edu.et" style="color:white">Ethiopian Learning Management System</a> <br><br>
+                       <a href="http://ejol.ethernet.edu.et" style="color:white">Ethiopian Journal Online</a> <br><br>
+                   </p> -->
+            <!--  </div>
+                   <div class="col-md-4" style="margin-top: 3%;color:white;text-align: left;"> -->
+            <!-- <h4></b>CONTACT US</b></h4> <hr/>
+                       <p style="text-align: left;"> 
+                           <b>Phone</b>: +251-111-55-31-33 <br>
+                           <b>Email</b>: moshe@ethernet.edu.et <br>
+                           <b>Web</b>: www.moshe.gov.et <br>
+                           <b>Facebook</b>: https://www.facebook.com/SHE.Ethio/ <br>
+                           <b>Twitter</b>: https://twitter.com/she_ethiopia <br>
+                       </p> -->
+            <!-- <a href="javascript:void(0)" id="nav-feedback" style="color: white" ><b> Feedback</b></a> -->
+          </div>
+          <div class="col-md-4" style="color: white; text-align: center;margin-top: 2%;margin-bottom: 2%; ">
+            <center><a href="http://moshe.gov.et" target="_blank" style="color: white; text-align: center;">2020
+                &copy;Ministry of Science and Higher Education</a></center>
+          </div>
+          <div class="col-md-4" style="margin-top: 2%;margin-bottom: 2%; color:white;text-align: right;">
+
+            <a href="https://www.facebook.com/SHE.Ethio/" target="_blank" class="btn btn-fb btn-fab social-logo"><i
+                class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/she_ethiopia" target="_blank" class="btn btn-tw btn-fab social-logo"><i
+                class="fa fa-twitter"></i></a>
+            <a href="https://www.moshe.gov.et" target="_blank" class="btn btn-gplus btn-fab social-logo"><i
+                class="fa fa-globe"></i></a>
+            <a href="https://www.linkedin.com/company/49124883" target="_blank"
+              class="btn btn-li btn-fab social-logo"><i class="fa fa-linkedin"></i></a>
+            <!-- <a href="https://www.instagram.com/ndlindia" target="_blank" class="btn btn-instra btn-fab social-logo"><i class="fa fa-instagram"></i></a> -->
+
+          </div>
+        </div>
+
+        <div id="footer_feedback" class="pull-right">
+          <!-- <p class="text-muted"><a target="_blank" href="http://www.dspace.org/">DSpace Software</a> Copyright&nbsp;&copy;&nbsp;2002-2013&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-
+                               <a target="_blank" href="/feedback">Feedback</a>
+                               <a href="/htmlmap"></a></p> -->
+        </div>
+  </div>
+
+  </footer>
+  <!-- <center><a href="http://moshe.gov.et" style="color: #034B64;text-align: center;">2020 &copy;Ministry of Science and Higher Education</a></center> -->
+  </section>
+
+  <!-- <div><center><a href="http://moshe.gov.et" style="color:#034B64;text-decoration:none">2020 &copy;Ministry of Science and Higher Education</a></center>
+   </div> -->
+  <!-- 
+ <footer class="page-footer">
+ 
+ 
+ <div class="container-fluid hidden-xs">
+   <div class="col-sm-3">
+     <ul class="footerlink">
+       <li><a href="javascript:void(0)" id="nav-about">About</a>
+       </li>
+       <li><a href="javascript:void(0)" id="nav-disclaimer">Disclaimer</a></li>
+       <li><a href="https://ndl.iitkgp.ac.in/faq" target="_new">FAQ</a></li>
+       <li><a href="https://ndl.iitkgp.ac.in/help" target="_new">Help</a></li>
+     </ul>
+   </div>
+   <div class="col-sm-3 col-xs-4">
+     <ul class="footerlink">
+       <li title="For bulk registration please contact &#39;ndl-support@iitkgp.ac.in&#39;"><a href="javascript:void(0);" data-toggle="modal" data-target="#modal-bulk-regn">Bulk Registration</a></li>
+       <li><a href="javascript:void(0)" id="nav-sponsor">Sponsor</a></li>
+       <li><a href="javascript:void(0)" id="nav-contact">Contact</a></li>
+       <li><a href="https://ndl.iitkgp.ac.in/career" target="_blank">Career</a></li>
+     </ul>
+   </div>
+   <div class="col-sm-3 col-xs-4"> -->
+  <!-- 
+ <a class="btn btn-raised btn-sm nav-highlight"
+ href="javascript:void(0);" data-toggle="modal"
+ data-target="#modal-covid">Corona Outbreak</a> -->
+
+
+
+</div>
+</div>
+<style type="text/css">
+  #user_focus {
+    font-weight: 400;
+  }
+
+  #feedback-history>p>label {
+    font-weight: 200;
+    font-size: medium;
+    color: #ff0000;
+  }
+</style>
+<div class="modal fade" tabindex="-1" id="modal-feedback">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> </button>
+        <h4 class="modal-title text-primary">
+          <i class="fa fa-lg fa-mail-reply-all"></i> Feedback
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="alert text-info" role="alert" style="padding-bottom: 0px;">
+          <i class="fa fa-info-circle"></i> You are in <span id="user_focus"></span> page, help us by providing your
+          feedback on different features
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-inline">
+              <label for="feedback-cat" class="feed-label text-primary">Select page category </label>
+              <div class="dropdown bootstrap-select show-tick bs3" style="width: 100%;"><select id="feedback-cat"
+                  class="selectpicker show-tick" data-width="100%" title="Select page category" tabindex="-98">
+                  <option class="bs-title-option" value=""></option>
+                  <option value="search">Search</option>
+                  <option value="browse-source">Browse by source</option>
+                  <option value="browse-type">Browse by type</option>
+                  <option value="browse-subject">Browse by subject</option>
+                  <option value="browse-learningResourceType">Browse by learning resource type</option>
+                  <option value="content">Content</option>
+                  <option value="account">Account</option>
+                  <option value="other">Other</option>
+                </select><button type="button" class="btn dropdown-toggle btn-default bs-placeholder"
+                  data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox"
+                  aria-expanded="false" data-id="feedback-cat" title="Select page category">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Select page category</div>
+                    </div>
+                  </div><span class="bs-caret"><span class="caret"></span></span>
+                </button>
+                <div class="dropdown-menu open">
+                  <div class="inner open" role="listbox" id="bs-select-2" tabindex="-1">
+                    <ul class="dropdown-menu inner " role="presentation"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="form-inline feed-subcat" style="display: none;" id="div-subcat-search">
+              <label for="search" class="feed-label text-primary">Select feature </label>
+              <div class="dropdown bootstrap-select show-tick bs3" style="width: 100%;"><select
+                  class="selectpicker show-tick" title="Select feature" id="subcat-search" data-width="100%"
+                  tabindex="-98">
+                  <option class="bs-title-option" value=""></option>
+                  <option value="result">Search result</option>
+                  <option value="box">Search box</option>
+                  <option value="filters">Filters</option>
+                  <option value="breadcrumbs">Breadcrumbs</option>
+                  <option value="type_class">Content type classification</option>
+                  <option value="advanced">Advanced search</option>
+                </select><button type="button" class="btn dropdown-toggle btn-default bs-placeholder"
+                  data-toggle="dropdown" role="combobox" aria-owns="bs-select-3" aria-haspopup="listbox"
+                  aria-expanded="false" data-id="subcat-search" title="Select feature">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Select feature</div>
+                    </div>
+                  </div><span class="bs-caret"><span class="caret"></span></span>
+                </button>
+                <div class="dropdown-menu open">
+                  <div class="inner open" role="listbox" id="bs-select-3" tabindex="-1">
+                    <ul class="dropdown-menu inner " role="presentation"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-inline feed-subcat" style="display: none;" id="div-subcat-browse-source">
+              <label for="browse-source" class="feed-label text-primary">Select feature </label>
+              <div class="dropdown bootstrap-select show-tick bs3" style="width: 100%;"><select
+                  class="selectpicker show-tick" title="Select feature" id="subcat-browse-source" data-width="100%"
+                  tabindex="-98">
+                  <option class="bs-title-option" value=""></option>
+                  <option value="selection">Source selection</option>
+                  <option value="result">Browse result</option>
+                  <option value="filters">Browse Filter</option>
+                  <option value="breadcrumbs">Breadcrumbs</option>
+                </select><button type="button" class="btn dropdown-toggle btn-default bs-placeholder"
+                  data-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox"
+                  aria-expanded="false" data-id="subcat-browse-source" title="Select feature">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Select feature</div>
+                    </div>
+                  </div><span class="bs-caret"><span class="caret"></span></span>
+                </button>
+                <div class="dropdown-menu open">
+                  <div class="inner open" role="listbox" id="bs-select-4" tabindex="-1">
+                    <ul class="dropdown-menu inner " role="presentation"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-inline feed-subcat" style="display: none;" id="div-subcat-browse-type">
+              <label for="browse-type" class="feed-label text-primary">Select feature </label>
+              <div class="dropdown bootstrap-select show-tick bs3" style="width: 100%;"><select
+                  class="selectpicker show-tick" title="Select feature" id="subcat-browse-type" data-width="100%"
+                  tabindex="-98">
+                  <option class="bs-title-option" value=""></option>
+                  <option value="selection">Type selection</option>
+                  <option value="result">Browse result</option>
+                  <option value="filters">Browse Filter</option>
+                  <option value="breadcrumbs">Breadcrumbs</option>
+                </select><button type="button" class="btn dropdown-toggle btn-default bs-placeholder"
+                  data-toggle="dropdown" role="combobox" aria-owns="bs-select-5" aria-haspopup="listbox"
+                  aria-expanded="false" data-id="subcat-browse-type" title="Select feature">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Select feature</div>
+                    </div>
+                  </div><span class="bs-caret"><span class="caret"></span></span>
+                </button>
+                <div class="dropdown-menu open">
+                  <div class="inner open" role="listbox" id="bs-select-5" tabindex="-1">
+                    <ul class="dropdown-menu inner " role="presentation"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-inline feed-subcat" style="display: none;" id="div-subcat-browse-subject">
+              <label for="browse-subject" class="feed-label text-primary">Select feature </label>
+              <div class="dropdown bootstrap-select show-tick bs3" style="width: 100%;"><select
+                  class="selectpicker show-tick" title="Select feature" id="subcat-browse-subject" data-width="100%"
+                  tabindex="-98">
+                  <option class="bs-title-option" value=""></option>
+                  <option value="selection">Subject selection</option>
+                  <option value="result">Browse result</option>
+                  <option value="filters">Browse Filter</option>
+                  <option value="breadcrumbs">Breadcrumbs</option>
+                </select><button type="button" class="btn dropdown-toggle btn-default bs-placeholder"
+                  data-toggle="dropdown" role="combobox" aria-owns="bs-select-6" aria-haspopup="listbox"
+                  aria-expanded="false" data-id="subcat-browse-subject" title="Select feature">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Select feature</div>
+                    </div>
+                  </div><span class="bs-caret"><span class="caret"></span></span>
+                </button>
+                <div class="dropdown-menu open">
+                  <div class="inner open" role="listbox" id="bs-select-6" tabindex="-1">
+                    <ul class="dropdown-menu inner " role="presentation"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-inline feed-subcat" style="display: none;" id="div-subcat-browse-learningResourceType">
+              <label for="browse-learningResourceType" class="feed-label text-primary">Select feature </label>
+              <div class="dropdown bootstrap-select show-tick bs3" style="width: 100%;"><select
+                  class="selectpicker show-tick" title="Select feature" id="subcat-browse-learningResourceType"
+                  data-width="100%" tabindex="-98">
+                  <option class="bs-title-option" value=""></option>
+                  <option value="selection">Learning resource type selection</option>
+                  <option value="result">Browse result</option>
+                  <option value="filters">Browse Filter</option>
+                  <option value="breadcrumbs">Breadcrumbs</option>
+                </select><button type="button" class="btn dropdown-toggle btn-default bs-placeholder"
+                  data-toggle="dropdown" role="combobox" aria-owns="bs-select-7" aria-haspopup="listbox"
+                  aria-expanded="false" data-id="subcat-browse-learningResourceType" title="Select feature">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Select feature</div>
+                    </div>
+                  </div><span class="bs-caret"><span class="caret"></span></span>
+                </button>
+                <div class="dropdown-menu open">
+                  <div class="inner open" role="listbox" id="bs-select-7" tabindex="-1">
+                    <ul class="dropdown-menu inner " role="presentation"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-inline feed-subcat" style="display: none;" id="div-subcat-content">
+              <label for="content" class="feed-label text-primary">Select feature </label>
+              <div class="dropdown bootstrap-select show-tick bs3" style="width: 100%;"><select
+                  class="selectpicker show-tick" title="Select feature" id="subcat-content" data-width="100%"
+                  tabindex="-98">
+                  <option class="bs-title-option" value=""></option>
+                  <option value="access">Accessibility</option>
+                  <option value="type">Type</option>
+                  <option value="metadata">Metadata</option>
+                </select><button type="button" class="btn dropdown-toggle btn-default bs-placeholder"
+                  data-toggle="dropdown" role="combobox" aria-owns="bs-select-8" aria-haspopup="listbox"
+                  aria-expanded="false" data-id="subcat-content" title="Select feature">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Select feature</div>
+                    </div>
+                  </div><span class="bs-caret"><span class="caret"></span></span>
+                </button>
+                <div class="dropdown-menu open">
+                  <div class="inner open" role="listbox" id="bs-select-8" tabindex="-1">
+                    <ul class="dropdown-menu inner " role="presentation"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-inline feed-subcat" style="display: none;" id="div-subcat-account">
+              <label for="account" class="feed-label text-primary">Select feature </label>
+              <div class="dropdown bootstrap-select show-tick bs3" style="width: 100%;"><select
+                  class="selectpicker show-tick" title="Select feature" id="subcat-account" data-width="100%"
+                  tabindex="-98">
+                  <option class="bs-title-option" value=""></option>
+                  <option value="regn">Registration</option>
+                  <option value="login">Log-in</option>
+                  <option value="recovery">Account recovery</option>
+                  <option value="customize">Profile customization</option>
+                </select><button type="button" class="btn dropdown-toggle btn-default bs-placeholder"
+                  data-toggle="dropdown" role="combobox" aria-owns="bs-select-9" aria-haspopup="listbox"
+                  aria-expanded="false" data-id="subcat-account" title="Select feature">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Select feature</div>
+                    </div>
+                  </div><span class="bs-caret"><span class="caret"></span></span>
+                </button>
+                <div class="dropdown-menu open">
+                  <div class="inner open" role="listbox" id="bs-select-9" tabindex="-1">
+                    <ul class="dropdown-menu inner " role="presentation"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-inline feed-subcat" style="display: none;" id="div-subcat-other">
+              <label for="other" class="feed-label text-primary">Select feature </label>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group is-empty">
+          <textarea class="form-control focused-textbox" id="feed-text" rows="3"
+            placeholder="Enter your feedback here and click the submit button"></textarea>
+        </div>
+        <div id="feedMsg"></div>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" onclick="submit_feedback()" class="btn btn-raised btn-success">
+          Submit</button>
+        <button type="button" onclick="reset_feedback()" data-dismiss="modal"
+          class="btn btn-raised btn-warning">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $("#feedback-cat").on("change", function () {
+    $(".feed-subcat").hide(50);
+    if ($(this).val() == "other") {
+      $("#div-subcat-" + $(this).val()).hide(50);
+    } else {
+      $("#div-subcat-" + $(this).val()).show(50);
+    }
+  });
+  function submit_feedback() {
+    var text = $("#feed-text").val().trim();
+    if (text == "") {
+      alert("Blank feedback can't be added");
+      return;
+    }
+    var cat = $("#feedback-cat").val();
+    var subcategory = "";
+    if (cat != "other")
+      subcategory = $("#subcat-" + cat).val();
+    $.post("/feedback", {
+      cat: cat,
+      subcat: subcategory,
+      text: text
+    }, function (jsonObj) {
+      $("#feed-text").val("");
+      if (typeof jsonObj.msg === "undefined")
+        return;
+      $("#feedMsg").html("");
+      $("#feedMsg").html(jsonObj.msg);
+    }).fail(function () {
+      alert("server error");
+    });
+  }
+  function get_focused() {
+    $(".feed-subcat").hide(50);
+    $(".sub-cat").css("display", "none");
+    var focused = "other";
+    if (window.location.pathname == "/result") {
+      var temp = decodeURIComponent(window.location.search.replace("?q=", ""));
+      if (temp != "") {
+        switch (jQuery.parseJSON(temp).t) {
+          case "search": focused = "search"; break;
+          case "sourceOrganization": focused = "browse-source"; break;
+          case "type": focused = "browse-type"; break;
+          case "DDC": focused = "browse-subject"; break;
+          case "learningResourceType": focused = "browse-learningResourceType"; break;
+          default: focused = "other";
+        }
+      }
+    } else if (window.location.pathname.indexOf("account") != -1) {
+      focused = "account";
+    } else if (window.location.pathname.indexOf("document") != -1) {
+      focused = "content";
+    }
+    $("#user_focus").html($("#feedback-cat").find("option[value='" + focused + "']").text());
+    $("#feedback-cat").val(focused).selectpicker('refresh');
+    if (focused != "other") {
+      $("#div-subcat-" + focused).show(50);
+    }
+  }
+  function reset_feedback() {
+    $("#feed-text").val("");
+    $("#feedMsg").html("");
+  }
+</script>
+<div class="modal fade" id="modal-about" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title">
+          <i class="fa fa-info-circle"></i> About NADLE
+        </h4>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <p class="text-justify text-bolder">
+          The National Academic Digital Library of Ethiopia (NADLE) is a project under Ministry of Science and Higher
+          Education, Ethiopia. The objective is to collect and collate metadata and provide full text index from several
+          national and international digital libraries, as well as other relevant sources. It is a academic digital
+          repository containing textbooks, articles, audio books, lectures, simulations, fiction and all other kinds of
+          learning media. The NADLE provides free of cost access to many academic books in English and the Other
+          languages.
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-raised btn-primary"
+          style="background-color: #1F3F5E;">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-contact" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h4 class="modal-title">
+          <i class="fa fa-phone-square"></i> Contact
+        </h4>
+      </div>
+      <div class="modal-body" style="padding: 10px; text-align: center;">
+        <div style="text-align: center; color: #615070;">
+          <h4>
+            <strong>National Academic Digital Library of Ethiopia</strong>
+          </h4>
+          <h5>Ethiopian Education and Research Network(EthERNet)
+            King George VI Av., Addis Ababa, Ethiopia</h5>
+          <h5>Phone: +251-111-55-31-33</h5>
+          <h5>Web: www.moshe.gov.et</h5>
+          <br>
+
+          <p>
+            For any issue or feedback, please write to <strong> <a href="mailto:moshe@ethernet.edu.et?subject=Feedback"
+                style="color: #034B64;">moshe@ethernet.edu.et</a></strong>
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer" style="text-align: center">
+        <button type="button" data-dismiss="modal" class="btn btn-raised btn-primary"
+          style="background-color: #1F3F5E;">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-covid" tabindex="-1" style="display: none;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title text-danger">
+          COVID-19 Lockdown not to affect your study. Study through National
+          Digital Library of Ethiopia (NADLE)
+        </h4>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <ol class="text-left">
+          <li>All the resources can be accessed without being logged-in.
+          </li>
+          <li>Undergraduate students: Please click the "Undergraduate" button. College
+            Students: Please click the button relevant to your discipline.</li>
+          <li>You may "Browse by Subject" using the Browse button at top left
+            corner or right middle and select the "Subject" you are interested.</li>
+          <li>You may also search the resourses by putting topic of study ,author etc.
+            (such as "economics") in the "Search" window above.</li>
+        </ol>
+        <div class="btn-group" role="group">
+          <a href="http://ndl.ethernet.edu.et/handle/123456789/79572" target="_new" class="btn btn-raised btn-primary"
+            style="background-color: #1F3F5E;"><i class="fa fa-lg fa-book"></i><br>E-Books</a>
+
+          <a href="http://ndl.ethernet.edu.et/handle/123456789/78232" target="_new" class="btn btn-raised btn-primary"
+            style="background-color: #1F3F5E;"><i class="fa fa-lg fa-graduation-cap"></i><br>Course Materials</a>
+          <a href="http://ndl.ethernet.edu.et/handle/123456789/78230" target="_new" class="btn btn-raised btn-primary"
+            style="background-color: #1F3F5E;"><i class="fa fa-lg fa-university"></i><br> TVET</a>
+          <a href="http://ndl.ethernet.edu.et/handle/123456789/87337" target="_new" class="btn btn-raised btn-primary"
+            style="background-color: #1F3F5E;"><i class="fa fa-lg fa-graduation-cap"></i><br>Under Graduate</a>
+
+          <a href="http://ndl.ethernet.edu.et/handle/123456789/87346" target="_new" class="btn btn-raised btn-primary"
+            style="background-color: #1F3F5E;"><i class="fa fa-lg fa-graduation-cap"></i><br>Post Graduate</a>
+
+
+          <a href="http://ndl.ethernet.edu.et/mit.jsp" target="_new" class="btn btn-raised btn-primary"
+            style="background-color: #1F3F5E;"><i class="fa fa-lg fa-graduation-cap"></i><br>Online Courses</a>
+
+        </div>
+        <hr>
+        <h4 class="modal-title text-danger">Additional COVID-19 Research Resources
+          Repository</h4>
+        
+        <p class="text-left">It is a collection of Scholarly Publications
+          &amp; Publisher/Indexed Collections, Data Sets &amp; Data
+          Repositories, Documents &amp; Videos, Journals &amp; Conferences,
+          Ideas &amp; Funding and Challenges &amp; Start Ups. To access these
+          resources and to contribute please click the button below.</p>
+        <a href="https://nadre.ethernet.edu.et" target="_blank" class="btn btn-raised btn-primary"
+          style="background-color: #1F3F5E;"><i class="fa fa-lg fa-graduation-cap"></i><br>Covid-19 Research
+          Resources</a>
+        <!--
+ <p class="text-left">
+ <strong>Note:</strong> One csv file can contain upto 1000 records.
+ If required, you can create multiple files.
+ </p>
+ -->
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+  #modal-covid .btn-primary {
+    /*padding: 5px 20px;*/
+    font-size: small;
+  }
+
+  #modal-covid .modal-body {
+    padding: 10px 24px 0px;
+  }
+
+  #modal-covid .modal-footer {
+    padding: 0px 20px 10px;
+  }
+</style>
+<script type="text/javascript">
+  $(document).bind("contextmenu", function (e) { return false; });
+  function change_ui_language(language) {
+    document.cookie = "lang=" + language + ";path=/";
+    location.reload();
+  }
+  $("#nav-contact").on("click", function () {
+    $("#modal-contact").modal('show');
+  });
+  $("#nav-sponsor").on("click", function () {
+    $("#modal-sponsor").modal('show');
+  });
+  $("#nav-feedback").on("click", function () {
+    get_focused();
+    $("#modal-feedback").modal('show');
+  });
+  $("#nav-disclaimer").on("click", function () {
+    $("#modal-disclaimer").modal('show');
+  });
+  $("#nav-about").on("click", function () {
+    $("#modal-about").modal('show');
+  });
+  $("#nav-login").on("click", function () {
+    $("#modal-login").modal('show');
+  });
+  $(document).ready(function () {
+    $("#nav-covid").addClass("blink");
+  });
+  $("#nav-covid").on("click", function () {
+    $("#modal-covid").modal('show');
+  });
+
+  $("#nav-account-customize").on("click", function () {
+    $("#modalSettingsChange").modal('show');
+    /** changed @ DEC'2018, add DOB in change settings  **/
+    $("#datepickerChangeSettings").datepicker({
+      changeMonth: true,
+      changeYear: true,
+      dateFormat: "yy-mm-dd",
+      maxDate: "+0M +0D",
+      yearRange: "-100:+0"
+    });
+    $('#ui-datepicker-div').appendTo($('#modalSettingsChange'));
+  });
+  $("#nav-account-logout").on("click", function () {
+    window.location = "/acc-login-logout.php";
+  });
+  $(function () {
+    var navMain = $(".navbar-collapse"); // avoid dependency on #id
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+      navMain.collapse('hide');
+    });
+  });
+  //prevent whitespace character in password field/ added on 2017-07-01
+  $(".no-space").on("keypress", function () {
+    var key = event.keyCode;
+    if (key === 32) {
+      event.preventDefault();
+      alert("Space not allowed!");
+    }
+  });
+ ////////////
+</script>
+<script src="front_page_files/slider.js"></script>
+<script src="front_page_files/landing.js"></script>
+<div id="blank-search-modal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="text-align: center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title text-primary">Invalid search keyword</h4>
+      </div>
+      <div class="modal-body">You have entered an invalid search keyword. Search keyword should be at-least 2 characters
+        long</div>
+      <div class="modal-footer" style="text-align: center;">
+        <a type="button" class="btn btn-primary btn-raised" href="javascript:void(0)" data-dismiss="modal">OK</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-bulk-regn" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title">
+          <i class="fa fa-info-circle"></i> Bulk Registration
+        </h4>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <p class="text-justify text-bolder">
+          To register the users of your institute through "Bulk
+          Registration" in NDLI portal, kindly send the excel file in comma
+          separated values (CSV) format to <a
+            href="mailto:ndl-support@iitkgp.ac.in?subject=Bulk%20Registration">ndl-support@iitkgp.ac.in</a>.
+          Please mention the institute name within the mail.
+        </p>
+        <p class="text-bolder text-left">The steps for creating CSV file
+          are as follows:</p>
+        <ol class="text-left">
+          <li>Create an excel sheet of your users which includes students,
+            faculties and staffs.</li>
+          <li>Excel file should contain (1st column) e-mail id (2nd column),
+            first name (3rd column), last name only with no other information
+            like serial number, heading, signature, etc.</li>
+          <li>Save the excel file in .csv format.</li>
+        </ol>
+        <hr>
+        <p class="text-left">
+          <strong>Note:</strong> One csv file can contain upto 1000 records.
+          If required, you can create multiple files.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-raised btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

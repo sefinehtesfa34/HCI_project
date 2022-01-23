@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <link rel="alternate" type="application/rss+xml" title="BDU-IUC RSS" href="https://www.bdu.edu.et/iuc/rss.xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" href="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/vilurus%20logo.JPG"
+    type="image/jpeg" />
+  <title>BDU-IUC</title>
+  <style type="text/css" media="all">
+    @import url("https://www.bdu.edu.et/iuc/modules/system/system.base.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/modules/system/system.menus.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/modules/system/system.messages.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/modules/system/system.theme.css?qfrucr");
+  </style>
+  <style type="text/css" media="all">
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/calendar/css/calendar_multiday.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/modules/comment/comment.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/date/date_api/date.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/modules/field/theme/field.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/modules/node/node.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/modules/search/search.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/modules/user/user.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/views/css/views.css?qfrucr");
+  </style>
+  <style type="text/css" media="all">
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/ctools/css/ctools.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/panels/css/panels.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/panels/plugins/layouts/onecol/onecol.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/tb_megamenu/css/bootstrap.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/tb_megamenu/css/base.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/tb_megamenu/css/default.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/tb_megamenu/css/compatibility.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/tb_megamenu/css/styles/black.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/flexslider/assets/css/flexslider_img.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/libraries/flexslider/flexslider.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/modules/social_media_links/social_media_links.css?qfrucr");
+  </style>
+  <style type="text/css" media="all">
+    @import url("https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/css/awesome-font.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/style.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/custom_style.css?qfrucr");
+    @import url("https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/css/responsive.css?qfrucr");
+  </style>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+  <script type="text/javascript" src="https://www.bdu.edu.et/iuc/misc/jquery-extend-3.4.0.js?v=1.10.2"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.10.2"></script>
+  <script type="text/javascript" src="https://www.bdu.edu.et/iuc/misc/jquery.once.js?v=1.2"></script>
+  <script type="text/javascript" src="https://www.bdu.edu.et/iuc/misc/drupal.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/modules/admin_menu/admin_devel/admin_devel.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/js/jquery.flexslider-min.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/js/slide.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/modules/tb_megamenu/js/tb-megamenu-frontend.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/modules/tb_megamenu/js/tb-megamenu-touch.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/libraries/flexslider/jquery.flexslider-min.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/js/jquery.uniform.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/js/jquery.responsify.init.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/js/superfish.js?qfrucr"></script>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/themes/iuc_theme/js/custom.js?qfrucr"></script>
+  <script type="text/javascript">
+
+        jQuery.extend(Drupal.settings, { "basePath": "\/iuc\/", "pathPrefix": "", "ajaxPageState": { "theme": "iuc_theme", "theme_token": "ObycX9lCm5BUkhpBlmeh6l-YEzOAZWXqlf2YVdzjUYI", "js": { "sites\/all\/modules\/flexslider\/assets\/js\/flexslider.load.js": 1, "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js": 1, "misc\/jquery-extend-3.4.0.js": 1, "misc\/jquery-html-prefilter-3.5.0-backport.js": 1, "misc\/jquery.once.js": 1, "misc\/drupal.js": 1, "sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js": 1, "sites\/all\/themes\/iuc_theme\/js\/jquery.flexslider-min.js": 1, "sites\/all\/themes\/iuc_theme\/js\/slide.js": 1, "sites\/all\/modules\/tb_megamenu\/js\/tb-megamenu-frontend.js": 1, "sites\/all\/modules\/tb_megamenu\/js\/tb-megamenu-touch.js": 1, "sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js": 1, "sites\/all\/themes\/iuc_theme\/js\/jquery.uniform.js": 1, "sites\/all\/themes\/iuc_theme\/js\/jquery.responsify.init.js": 1, "sites\/all\/themes\/iuc_theme\/js\/superfish.js": 1, "sites\/all\/themes\/iuc_theme\/js\/custom.js": 1 }, "css": { "modules\/system\/system.base.css": 1, "modules\/system\/system.menus.css": 1, "modules\/system\/system.messages.css": 1, "modules\/system\/system.theme.css": 1, "sites\/all\/modules\/calendar\/css\/calendar_multiday.css": 1, "modules\/comment\/comment.css": 1, "sites\/all\/modules\/date\/date_api\/date.css": 1, "sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css": 1, "modules\/field\/theme\/field.css": 1, "modules\/node\/node.css": 1, "modules\/search\/search.css": 1, "modules\/user\/user.css": 1, "sites\/all\/modules\/views\/css\/views.css": 1, "sites\/all\/modules\/ctools\/css\/ctools.css": 1, "sites\/all\/modules\/panels\/css\/panels.css": 1, "sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css": 1, "sites\/all\/modules\/tb_megamenu\/css\/bootstrap.css": 1, "sites\/all\/modules\/tb_megamenu\/css\/base.css": 1, "sites\/all\/modules\/tb_megamenu\/css\/default.css": 1, "sites\/all\/modules\/tb_megamenu\/css\/compatibility.css": 1, "sites\/all\/modules\/tb_megamenu\/css\/styles\/black.css": 1, "sites\/all\/modules\/flexslider\/assets\/css\/flexslider_img.css": 1, "sites\/all\/libraries\/flexslider\/flexslider.css": 1, "sites\/all\/modules\/social_media_links\/social_media_links.css": 1, "sites\/all\/themes\/iuc_theme\/css\/awesome-font.css": 1, "sites\/all\/themes\/iuc_theme\/style.css": 1, "sites\/all\/themes\/iuc_theme\/custom_style.css": 1, "sites\/all\/themes\/iuc_theme\/css\/responsive.css": 1 } }, "jcarousel": { "ajaxPath": "\/iuc\/jcarousel\/ajax\/views" }, "flexslider": { "optionsets": { "default": { "namespace": "flex-", "selector": ".slides \u003E li", "easing": "swing", "direction": "horizontal", "reverse": false, "smoothHeight": false, "startAt": 0, "animationSpeed": 600, "initDelay": 0, "useCSS": true, "touch": true, "video": false, "keyboard": true, "multipleKeyboard": false, "mousewheel": false, "controlsContainer": ".flex-control-nav-container", "sync": "", "asNavFor": "", "itemWidth": 0, "itemMargin": 0, "minItems": 0, "maxItems": 0, "move": 0, "animation": "fade", "slideshow": true, "slideshowSpeed": 7000, "directionNav": true, "controlNav": true, "prevText": "Previous", "nextText": "Next", "pausePlay": false, "pauseText": "Pause", "playText": "Play", "randomize": false, "thumbCaptions": false, "thumbCaptionsBoth": false, "animationLoop": true, "pauseOnAction": true, "pauseOnHover": false, "manualControls": "" } }, "instances": { "flexslider-1": "default" } }, "urlIsAjaxTrusted": { "\/iuc\/": true } });
+//--><!]]>
+  </script>
+  <!--[if lt IE 9]><script src="/iuc/sites/all/themes/iuc_theme/js/html5.js"></script><![endif]-->
+</head>
+
+<body class="html front not-logged-in one-sidebar sidebar-first page-node">
+
+  <div id="wrap" class="clearfix" style="background-color: #fff;">
+    <header id="header" class="clearfix">
+      <hgroup id="logo">
+        <div id="logoimg"><a href="/iuc/" title="Home"><img
+              src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/BDU%20IUC%20.jpg" /></a></div>
+        <div id="sitename"><a href="/iuc/" title="Home"></a></div>
+      </hgroup>
+      <nav id="navigation" role="navigation" class="clearfix">
+        <div id="main-menu">
+        </div>
+      </nav>
+    </header>
+    <div class="menu_region">
+      <div class="region region-menu-region">
+        <div id="block-tb-megamenu-main-menu" class="block block-tb-megamenu">
+
+
+          <div class="content">
+            <div class="tb-megamenu tb-megamenu-main-menu style-black">
+              <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button"
+                type="button">
+                <i class="icon-reorder"></i>
+              </button>
+              <div class="nav-collapse collapse always-show">
+                <ul class="tb-megamenu-nav nav level-0 items-8">
+                  <li data-id="219" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption=""
+                    data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                    class="tb-megamenu-item level-1 mega active">
+                    <a href="/iuc/" class="">
+
+                      Home </a>
+                  </li>
+
+                  <li data-id="316" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption=""
+                    data-alignsub="center" data-group="0" data-hidewcol="0" data-hidesub="0"
+                    class="tb-megamenu-item level-1 mega mega-align-center dropdown active">
+                    <a href="/iuc/" class="dropdown-toggle">
+
+                      About Us <span class="caret"></span>
+                    </a>
+                    <div data-class="" data-width=""
+                      class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                      <div class="mega-dropdown-inner">
+                        <div class="tb-megamenu-row row-fluid">
+                          <div data-class="" data-width="10" data-hidewcol="0" id="tb-megamenu-column-1"
+                            class="tb-megamenu-column span10  mega-col-nav">
+                            <div class="tb-megamenu-column-inner mega-inner clearfix">
+                              <ul class="tb-megamenu-subnav mega-nav level-1 items-5">
+                                <li data-id="502" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/introduction" class="">
+
+                                    Introduction </a>
+                                </li>
+
+                                <li data-id="368" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/departments-and-units" class="">
+
+                                    Departments and Units </a>
+                                </li>
+
+                                <li data-id="533" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/program-management" class="">
+
+                                    Program Management </a>
+                                </li>
+
+                                <li data-id="511" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/project-areas" class="">
+
+                                    Project areas </a>
+                                </li>
+
+                                <li data-id="370" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/contact" class="">
+
+                                    Contact Us </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li data-id="357" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption=""
+                    data-alignsub="center" data-group="0" data-hidewcol="0" data-hidesub="0"
+                    class="tb-megamenu-item level-1 mega mega-align-center dropdown active">
+                    <a href="/iuc/" class="dropdown-toggle">
+
+                      TISP <span class="caret"></span>
+                    </a>
+                    <div data-class="" data-width=""
+                      class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                      <div class="mega-dropdown-inner">
+                        <div class="tb-megamenu-row row-fluid">
+                          <div data-class="" data-width="8" data-hidewcol="0" id="tb-megamenu-column-2"
+                            class="tb-megamenu-column span8  mega-col-nav">
+                            <div class="tb-megamenu-column-inner mega-inner clearfix">
+                              <ul class="tb-megamenu-subnav mega-nav level-1 items-4">
+                                <li data-id="504" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/introduction-0" class="">
+
+                                    Introduction </a>
+                                </li>
+
+                                <li data-id="512" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/objective" class="">
+
+                                    Objective </a>
+                                </li>
+
+                                <li data-id="513" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/project-members" class="">
+
+                                    Project Members </a>
+                                </li>
+
+                                <li data-id="563" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="http://www.bdu.edu.et/iuc/tisp-photo-galery" class="">
+
+                                    Photo Gallery </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li data-id="358" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption=""
+                    data-alignsub="center" data-group="0" data-hidewcol="0" data-hidesub="0"
+                    class="tb-megamenu-item level-1 mega mega-align-center dropdown active">
+                    <a href="/iuc/" class="dropdown-toggle">
+
+                      LandResilience <span class="caret"></span>
+                    </a>
+                    <div data-class="" data-width=""
+                      class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                      <div class="mega-dropdown-inner">
+                        <div class="tb-megamenu-row row-fluid">
+                          <div data-class="" data-width="8" data-hidewcol="0" id="tb-megamenu-column-3"
+                            class="tb-megamenu-column span8  mega-col-nav">
+                            <div class="tb-megamenu-column-inner mega-inner clearfix">
+                              <ul class="tb-megamenu-subnav mega-nav level-1 items-4">
+                                <li data-id="505" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/introduction-1" class="">
+
+                                    Introduction </a>
+                                </li>
+
+                                <li data-id="514" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/objectives-0" class="">
+
+                                    Objectives </a>
+                                </li>
+
+                                <li data-id="515" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/project-members-0" class="">
+
+                                    Project Members </a>
+                                </li>
+
+                                <li data-id="564" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="http://bdu.edu.et/iuc/land-resilience-pho" class="">
+
+                                    Photo Gallery </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li data-id="359" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption=""
+                    data-alignsub="center" data-group="0" data-hidewcol="0" data-hidesub="0"
+                    class="tb-megamenu-item level-1 mega mega-align-center dropdown active">
+                    <a href="/iuc/" class="dropdown-toggle">
+
+                      Hydrogeology <span class="caret"></span>
+                    </a>
+                    <div data-class="" data-width=""
+                      class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                      <div class="mega-dropdown-inner">
+                        <div class="tb-megamenu-row row-fluid">
+                          <div data-class="" data-width="8" data-hidewcol="0" id="tb-megamenu-column-4"
+                            class="tb-megamenu-column span8  mega-col-nav">
+                            <div class="tb-megamenu-column-inner mega-inner clearfix">
+                              <ul class="tb-megamenu-subnav mega-nav level-1 items-4">
+                                <li data-id="506" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/introduction-2" class="">
+
+                                    Introduction </a>
+                                </li>
+
+                                <li data-id="516" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/objectives-1" class="">
+
+                                    Objectives </a>
+                                </li>
+
+                                <li data-id="517" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/project-members-1" class="">
+
+                                    Project Members </a>
+                                </li>
+
+                                <li data-id="565" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="http://bdu.edu.et/iuc/hydro-geology-photo" class="">
+
+                                    Photo Gallery </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li data-id="360" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption=""
+                    data-alignsub="center" data-group="0" data-hidewcol="0" data-hidesub="0"
+                    class="tb-megamenu-item level-1 mega mega-align-center dropdown active">
+                    <a href="/iuc/" class="dropdown-toggle">
+
+                      PostHarvest <span class="caret"></span>
+                    </a>
+                    <div data-class="" data-width=""
+                      class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                      <div class="mega-dropdown-inner">
+                        <div class="tb-megamenu-row row-fluid">
+                          <div data-class="" data-width="8" data-hidewcol="0" id="tb-megamenu-column-5"
+                            class="tb-megamenu-column span8  mega-col-nav">
+                            <div class="tb-megamenu-column-inner mega-inner clearfix">
+                              <ul class="tb-megamenu-subnav mega-nav level-1 items-4">
+                                <li data-id="507" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/introduction-3" class="">
+
+                                    Introduction </a>
+                                </li>
+
+                                <li data-id="518" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/objectives-2" class="">
+
+                                    Objectives </a>
+                                </li>
+
+                                <li data-id="519" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/project-members-2" class="">
+
+                                    Project Members </a>
+                                </li>
+
+                                <li data-id="566" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="http://bdu.edu.et/iuc/post-harvest-photo" class="">
+
+                                    Photo Gallery </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li data-id="361" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption=""
+                    data-alignsub="center" data-group="0" data-hidewcol="0" data-hidesub="0"
+                    class="tb-megamenu-item level-1 mega mega-align-center dropdown active">
+                    <a href="/iuc/" class="dropdown-toggle">
+
+                      Aquatic <span class="caret"></span>
+                    </a>
+                    <div data-class="" data-width=""
+                      class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                      <div class="mega-dropdown-inner">
+                        <div class="tb-megamenu-row row-fluid">
+                          <div data-class="" data-width="8" data-hidewcol="0" id="tb-megamenu-column-6"
+                            class="tb-megamenu-column span8  mega-col-nav">
+                            <div class="tb-megamenu-column-inner mega-inner clearfix">
+                              <ul class="tb-megamenu-subnav mega-nav level-1 items-4">
+                                <li data-id="508" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/introduction-4" class="">
+
+                                    Introduction </a>
+                                </li>
+
+                                <li data-id="520" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/objectives" class="">
+
+                                    Objectives </a>
+                                </li>
+
+                                <li data-id="521" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/project-members-3" class="">
+
+                                    Project Members </a>
+                                </li>
+
+                                <li data-id="567" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="http://bdu.edu.et/iuc/aquatic-photo" class="">
+
+                                    Photo Gallery </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li data-id="362" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption=""
+                    data-alignsub="right" data-group="0" data-hidewcol="0" data-hidesub="0"
+                    class="tb-megamenu-item level-1 mega mega-align-right dropdown active">
+                    <a href="/iuc/" class="dropdown-toggle">
+
+                      Socioeconom <span class="caret"></span>
+                    </a>
+                    <div data-class="" data-width=""
+                      class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                      <div class="mega-dropdown-inner">
+                        <div class="tb-megamenu-row row-fluid">
+                          <div data-class="" data-width="8" data-hidewcol="0" id="tb-megamenu-column-7"
+                            class="tb-megamenu-column span8  mega-col-nav">
+                            <div class="tb-megamenu-column-inner mega-inner clearfix">
+                              <ul class="tb-megamenu-subnav mega-nav level-1 items-5">
+                                <li data-id="509" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/introduction-5" class="">
+
+                                    Introduction </a>
+                                </li>
+
+                                <li data-id="522" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/objectives-4" class="">
+
+                                    Objectives </a>
+                                </li>
+
+                                <li data-id="523" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="/iuc/content/project-members-4" class="">
+
+                                    Project Members </a>
+                                </li>
+
+                                <li data-id="844" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="https://bdu.edu.et/iuc/report" class="">
+
+                                    Reports </a>
+                                </li>
+
+                                <li data-id="568" data-level="2" data-type="menu_item" data-class="" data-xicon=""
+                                  data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0"
+                                  class="tb-megamenu-item level-2 mega">
+                                  <a href="http://bdu.edu.et/iuc/socio-economic-photo" class="">
+
+                                    Photo Gallery </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /.block -->
+      </div>
+      <!-- /.region -->
+    </div>
+    <div class="custom_slide" style="margin-bottom: 0px;">
+      <div class="region region-custom-slide">
+        <div id="block-views-slideshow-block" class="block block-views">
+
+
+          <div class="content">
+            <div
+              class="view view-slideshow view-id-slideshow view-display-id-block view-dom-id-ac100c819e5c9d1451da7bb727a06681">
+
+
+
+              <div class="view-content">
+                <div id="flexslider-1" class="flexslider optionset-default">
+                  <ul class="slides">
+                    <li>
+                      <a href="/iuc/content/site-visits"><img typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/IMG_3759.JPG?itok=vCbSzPF7"
+                          width="700" height="300" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="/iuc/content/bdu-iuc-launching-workshop"><img typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/IMG_3474_1.JPG?itok=SC5SBORf"
+                          width="700" height="300" alt="" title="BDU-IUC Launching Workshop " /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="/iuc/content/bahir-dar-university-bdu-iuc-program-climate-resilience-green-economic-research-north-west"><img
+                          typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/IMG_3455.JPG?itok=4sJPWVId"
+                          width="700" height="300" alt=""
+                          title="Bahir Dar University BDU-IUC program on Climate Resilience Green Economic Research in North west Ethiopia" /></a>
+                    </li>
+                    <li>
+                      <a href="/iuc/content/iuc-program"><img typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/IMG_3422.JPG?itok=pt0am9_6"
+                          width="700" height="300" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="/iuc/content/typical-farmer%E2%80%99s-house-programme-areas"><img typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/13.JPG?itok=iveBHO5P"
+                          width="700" height="300" alt="" /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="/iuc/content/participants-programme-formulation-workshop-visit-river-guage-installation-wase-tana-project"><img
+                          typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/12_0.JPG?itok=3yCWEF68"
+                          width="700" height="300" alt=""
+                          title="Participants of the programme formulation workshop visit river guage installation of Wase - Tana Project at Wanzaye" /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="/iuc/content/explanation-participants-programme-formulation-about-egyptian-plan-modifying-nile-river-flow"><img
+                          typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/12.JPG?itok=LziFs7K8"
+                          width="700" height="300" alt=""
+                          title="Explanation to participants of programme formulation  about the Egyptian Plan of Modifying the Nile River Flow by Jan Nyssen " /></a>
+                    </li>
+                    <li>
+                      <a href="/iuc/content/matchmaking-event-brussels"><img typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/maching.jpg?itok=sgZThyRz"
+                          width="700" height="300" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="/iuc/content/bdu-team-concept-note-preparation-bdu-iuc-programme"><img
+                          typeof="foaf:Image"
+                          src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/slideshow_style/public/bdu%20team_1.jpg?itok=shG37GzV"
+                          width="700" height="300" alt="" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+
+        </div> <!-- /.block -->
+      </div>
+      <!-- /.region -->
+    </div>
+    <div id="main" class="clearfix">
+
+
+
+
+      <section id="content" role="main" class="clearfix">
+        <div class="region region-content">
+          <div id="block-views-news-block" class="block block-views">
+
+            <h2>News</h2>
+
+            <div class="content">
+              <div
+                class="view view-news view-id-news view-display-id-block view-dom-id-a1ecb45a3ff772a874206449bc2f5c13">
+
+
+
+                <div class="view-content">
+                  <table class="views-view-grid cols-4">
+
+                    <tbody>
+                      <tr class="row-1 row-first row-last">
+                        <td class="col-1 col-first">
+                          <div class="panel-display panel-1col clearfix">
+                            <div class="panel-panel panel-col">
+                              <div>
+                                <a
+                                  href="/iuc/content/consultative-meeting-socioeconomic-sustainable-livelihood-environmental-management-and"><img
+                                    typeof="foaf:Image"
+                                    src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/news_image_style/public/consultative%20meeting.PNG?itok=Z6j6NnV3"
+                                    width="290" height="130" alt="" /></a>
+                                <a
+                                  href="/iuc/content/consultative-meeting-socioeconomic-sustainable-livelihood-environmental-management-and">A
+                                  Consultative Meeting on Socioeconomic, Sustainable Livelihood, Environmental
+                                  Management, and Agricultural Extension in Northwest Ethiopia</a>
+                                <p>CONSULTATIVE MEETING REPORT Introduction A consultative meeting on Socioeconomic,
+                                  Sustainable Livelihood, Environment</p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-2">
+                          <div class="panel-display panel-1col clearfix">
+                            <div class="panel-panel panel-col">
+                              <div>
+                                <a href="/iuc/content/bdu-iuc-programme-officially-launched-6-18-january-2017"><img
+                                    typeof="foaf:Image"
+                                    src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/news_image_style/public/IMG_3759_0.JPG?itok=GJ6bD_Ld"
+                                    width="290" height="130" alt="" /></a>
+                                <a href="/iuc/content/bdu-iuc-programme-officially-launched-6-18-january-2017">BDU-IUC
+                                  Programme officially launched: 6-18 January 2017</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3">
+                          <div class="panel-display panel-1col clearfix">
+                            <div class="panel-panel panel-col">
+                              <div>
+                                <a
+                                  href="/iuc/content/bdu-iuc-programme-officially-included-five-years%E2%80%99-vlir-uos-support-23-december-2016-starting"><img
+                                    typeof="foaf:Image"
+                                    src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/news_image_style/public/IMG_3759_1.JPG?itok=IjgI36D8"
+                                    width="290" height="130" alt="" /></a>
+                                <a
+                                  href="/iuc/content/bdu-iuc-programme-officially-included-five-years%E2%80%99-vlir-uos-support-23-december-2016-starting">BDU-IUC
+                                  Programme officially included in the Five years’ VLIR UOS support (23 December 2016)
+                                  starting from 1 Jan 2017 </a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-4 col-last">
+                          <div class="panel-display panel-1col clearfix">
+                            <div class="panel-panel panel-col">
+                              <div>
+                                <a
+                                  href="/iuc/content/improved-version-bdu-iuc-programme-submitted-vlir-9-september-2016"><img
+                                    typeof="foaf:Image"
+                                    src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/styles/news_image_style/public/IMG_3759_2.JPG?itok=osdTHoB-"
+                                    width="290" height="130" alt="" /></a>
+                                <a
+                                  href="/iuc/content/improved-version-bdu-iuc-programme-submitted-vlir-9-september-2016">Improved
+                                  Version of the BDU-IUC programme Submitted to VLIR: 9 September 2016</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+
+
+
+                <div class="more-link">
+                  <a href="/iuc/news">
+                    more news </a>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div> <!-- /.block -->
+          <div id="block-system-main" class="block block-system">
+
+
+            <div class="content">
+              <article id="node-80" class="node node-iuc-slogan- node-promoted node-teaser clearfix"
+                about="/iuc/content/sharing-minds-changing-world" typeof="sioc:Item foaf:Document">
+                <header>
+                  <h2 class="title"><a href="/iuc/content/sharing-minds-changing-world">-</a></h2>
+                  <span property="dc:title" content="-" class="rdf-meta element-hidden"></span><span
+                    property="sioc:num_replies" content="0" datatype="xsd:integer"
+                    class="rdf-meta element-hidden"></span>
+
+                </header>
+
+                <div class="content">
+                  <div class="field field-name-field-slogan-photo field-type-image field-label-hidden">
+                    <div class="field-items">
+                      <div class="field-item even"><a href="/iuc/content/sharing-minds-changing-world"><img
+                            typeof="foaf:Image" src="https://www.bdu.edu.et/iuc/sites/bdu.edu.et.iuc/files/12.GIF"
+                            width="781" height="190" alt="" /></a></div>
+                    </div>
+                  </div>
+                  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                    <div class="field-items">
+                      <div class="field-item even" property="content:encoded">
+                        <p><br /></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article> <!-- /.node -->
+            </div>
+
+          </div> <!-- /.block -->
+        </div>
+        <!-- /.region -->
+      </section> <!-- /#main -->
+
+      <aside id="sidebar" role="complementary" class="clearfix">
+        <div class="region region-sidebar-first">
+          <div id="block-search-form" class="block block-search">
+
+
+            <div class="content">
+              <form action="/iuc/" method="post" id="search-block-form" accept-charset="UTF-8">
+                <div>
+                  <div class="container-inline">
+                    <h2 class="element-invisible">Search form</h2>
+                    <div class="form-item form-type-textfield form-item-search-block-form">
+                      <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                      <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2"
+                        name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+                    </div>
+                    <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit"
+                        name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id"
+                      value="form-yMZ6mPIBoMWdrl0WYg_XkmgTwMDm1uDqavsVZWK7r4s" />
+                    <input type="hidden" name="form_id" value="search_block_form" />
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div> <!-- /.block -->
+          <div id="block-views-events-block" class="block block-views">
+
+            <h2>Events</h2>
+
+            <div class="content">
+              <div
+                class="view view-events view-id-events view-display-id-block view-dom-id-d396fbb9420063a4d1d88d90ead16280">
+
+
+
+                <div class="view-content">
+                  <div class="item-list">
+                    <ul>
+                      <li class="views-row views-row-1 views-row-odd views-row-first">
+                        <a
+                          href="/iuc/content/joint-steering-committee-meeting-seminar-11-%E2%80%93-march-2018-ghent-belgium">Joint
+                          Steering Committee Meeting with Seminar: 11 – March 2018, Ghent, Belgium</a>
+                      </li>
+                      <li class="views-row views-row-2 views-row-even">
+                        <a href="/iuc/content/appointment-flemish-coordinator-and-project-leaders-2-march-2016">Appointment
+                          of Flemish coordinator and project leaders: 2 March 2016</a>
+                      </li>
+                      <li class="views-row views-row-3 views-row-odd">
+                        <a href="/iuc/content/appraisal-flemish-iuc-team-15-february-2016">Appraisal Flemish IUC Team:
+                          15 February 2016</a>
+                      </li>
+                      <li class="views-row views-row-4 views-row-even views-row-last">
+                        <a href="/iuc/content/matchmaking-event-brussels-24-%E2%80%93-29-january-2016">Matchmaking event
+                          in Brussels: 24 – 29 January 2016</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+
+
+                <div class="more-link">
+                  <a href="/iuc/events">
+                    more events </a>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div> <!-- /.block -->
+          <div id="block-block-7" class="block block-block">
+
+
+            <div class="content">
+              <h3><a href="https://www.researchgate.net/"><strong>Research Gate</strong></a></h3>
+            </div>
+
+          </div> <!-- /.block -->
+          <div id="block-block-6" class="block block-block">
+
+
+            <div class="content">
+              <h3><a href="https://bdu.edu.et/iuc/content/bdus-ongoing-projects"><strong>BDU's Ongoing
+                    Projects</strong></a></h3>
+            </div>
+
+          </div> <!-- /.block -->
+          <div id="block-block-5" class="block block-block">
+
+
+            <div class="content">
+              <h3><a href="https://bdu.edu.et/iuc/publication"><strong>Publication </strong></a></h3>
+            </div>
+
+          </div> <!-- /.block -->
+        </div>
+        <!-- /.region -->
+      </aside>
+
+      <div class="clear"></div>
+
+
+    </div>
+
+    <div id="footer-wrap" class="clearfix" style="background-color: #2d4c47;">
+      <div id="footer">
+        <div id="footer-block-wrap" class="clearfix">
+          <div id="footer-one">
+            <div class="region region-footer-first">
+              <div id="block-menu-menu-links" class="block block-menu">
+
+                <h2>Quick Links</h2>
+
+                <div class="content">
+                  <ul class="menu">
+                    <li class="first leaf"><a href="https://bdu.edu.et" title="">Bahir Dar University</a></li>
+                    <li class="last leaf"><a href="http://www.vliruos.be/en" title="">VLIR-UOS</a></li>
+                  </ul>
+                </div>
+
+              </div> <!-- /.block -->
+            </div>
+            <!-- /.region -->
+          </div>
+          <div id="footer-two">
+            <div class="region region-footer-second">
+              <div id="block-block-8" class="block block-block">
+
+                <h2>Address</h2>
+
+                <div class="content">
+                  <p style="margin-left:.5in;"><strong>BDU-IUC Office</strong></p>
+                  <p style="margin-left:.5in;"><strong>Wisdom Tower, 4<sup>th</sup> Floor</strong></p>
+                  <p style="margin-left:.5in;"><strong>P.O.Box 79, Bahir Dar University, Bahir Dar, Ethiopia</strong>
+                  </p>
+                  <p style="margin-left:.5in;"><strong>E-Mail: <a
+                        href="mailto:BDU-IUC@bdu.edu.et">BDU-IUC@bdu.edu.et</a></strong></p>
+                  <p style="margin-left:.5in;"><strong>Telephone: +251(058)3207426</strong></p>
+                  <p style="margin-left:.5in;"><strong>Fax: +251(058)32016560</strong></p>
+                </div>
+
+              </div> <!-- /.block -->
+            </div>
+            <!-- /.region -->
+          </div>
+          <div id="footer-three">
+            <div class="region region-footer-third">
+              <div id="block-block-3" class="block block-block">
+
+                <h2>Flemish Partners</h2>
+
+                <div class="content">
+                  <ul>
+                    <li><a href="http://www.ugent.be/en" title="">Ghent University</a></li>
+                    <li><a href="http://www.uhasselt.be/en" title="">Hasselt University</a></li>
+                    <li><a href="http://www.kuleuven.be/english" title="">KU Leuven</a></li>
+                    <li><a href="http://www.uantwepen.be/en" title="">University of Antwerp</a></li>
+                    <li><a href="http://www.vub.ac.be/en" title="">Vrije University Brussel</a></li>
+                    <li><a href="http://www.bdu.edu.et/iuc/content/ngos">NGO's</a></li>
+                  </ul>
+                </div>
+
+              </div> <!-- /.block -->
+            </div>
+            <!-- /.region -->
+          </div>
+          <div id="footer-four">
+            <div class="region region-footer-fourth">
+              <div id="block-block-4" class="block block-block">
+
+                <h2>Local Partners</h2>
+
+                <div class="content">
+                  <ul>
+                    <li><a href="http://www./bdu.edu.et/iuc/content/iucs"><strong>IUCs</strong></a></li>
+                    <li><a href="http://www.bdu.edu.et/iuc/content/sector-office"><strong>Sector Office</strong></a>
+                    </li>
+                    <li><a href="http://www.bdu.edu.et/iuc/content/local-ngos"><strong>NGOs</strong></a></li>
+                  </ul>
+                </div>
+
+              </div> <!-- /.block -->
+              <div id="block-social-media-links-social-media-links" class="block block-social-media-links">
+
+                <h2>Follow Us</h2>
+
+                <div class="content">
+                  <ul class="social-media-links platforms inline horizontal">
+                    <li class="facebook first"><a href="https://www.facebook.com/bduethiopia" title="Facebook"><img
+                          src="https://www.bdu.edu.et/iuc/sites/all/modules/social_media_links/libraries/elegantthemes/PNG/facebook.png"
+                          alt="Facebook icon" /></a></li>
+                    <li class="twitter"><a href="http://www.twitter.com/bduethiopa" title="Twitter"><img
+                          src="https://www.bdu.edu.et/iuc/sites/all/modules/social_media_links/libraries/elegantthemes/PNG/twitter.png"
+                          alt="Twitter icon" /></a></li>
+                    <li class="googleplus"><a href="https://plus.google.com/bduethiopia" title="Google+"><img
+                          src="https://www.bdu.edu.et/iuc/sites/all/modules/social_media_links/libraries/elegantthemes/PNG/googleplus.png"
+                          alt="Google+ icon" /></a></li>
+                    <li class="youtube last"><a href="http://www.youtube.com/user/bduethiopa" title="YouTube"><img
+                          src="https://www.bdu.edu.et/iuc/sites/all/modules/social_media_links/libraries/elegantthemes/PNG/youtube.png"
+                          alt="YouTube icon" /></a></li>
+                  </ul>
+                </div>
+
+              </div> <!-- /.block -->
+            </div>
+            <!-- /.region -->
+          </div>
+          <div class="clear"></div>
+        </div>
+
+
+        <div id="footer-bottom" class="clearfix">
+          <div id="copyright" class="clearfix">
+            Copyright-Bahir Dar University &copy; 2022, <a href="/iuc/"></a> //
+            Theme by <a href="http://bteshale4@gmail.com" target="_blank">LTTU</a>
+          </div>
+          <div id="back-to-top" class="clearfix">
+            <a href="#toplink">back up ↑</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript"
+    src="https://www.bdu.edu.et/iuc/sites/all/modules/flexslider/assets/js/flexslider.load.js?qfrucr"></script>
+</body>
+
+</html>
